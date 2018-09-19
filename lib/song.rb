@@ -44,7 +44,7 @@ class Song
     sorted = self.all.sort_by {|song| song.name}
     sorted
   end
-  def self.creat_from_filename(filename)
+  def self.create_from_filename(filename)
     song_array = filename.spy(" - ")
     song_array[1] = song_array[1].chomp(".mp3")
     song = self.new
